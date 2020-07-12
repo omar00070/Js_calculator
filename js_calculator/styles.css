@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    transform: translateY(100px);
+}
+
+body{
+    background: rgb(136, 195, 214);
+}
+.content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    flex-direction: column;
+
+}
+
+.calc-container{
+    width:220px;
+    height: 380px;
+    border-radius: 35px;
+    display: grid;
+    background: rgb(12, 12, 12);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    align-items: center;
+    color: rgb(230, 223, 223);    
+}
+
+button:focus{
+    outline-style: none;
+}
+
+.btn button{
+    border:none;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 0.6rem;
+    font-family: sans-serif;
+    color: rgb(230, 223, 223);    
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.display-container{
+    background: rgb(12, 12, 12);
+    border-radius: 10px;
+    grid-column: 1/5;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.display{
+    display: flex;
+}
+
+.num{
+    flex: 1;
+}
+
+.operator{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.display h1{
+    margin: 6px;
+}
+
+.answer{
+    margin-left: 7px;
+    font-size: 1.1rem;
+}
+
+.action button{
+    background: rgb(145, 3, 3);
+
+}
+
+.number button{
+    background: rgb(194, 133, 41);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.action button:hover{
+    background: rgb(104, 1, 1);
+}
+
+.action button:active{
+    background: white;
+    color: rgb(145, 3, 3);
+}
+
+.number button:hover{
+    background: rgb(134, 92, 28);
+}
+
+.number button:active{
+    background: white;
+    color:  rgb(194, 133, 41);
+}
+
+h2{
+    pointer-events: none;
+}
+
+.credit{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-150px);
+}
