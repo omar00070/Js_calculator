@@ -1,9 +1,4 @@
 //selectors
-const canvas = document.querySelector("canvas");
-//set canves dimensions
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
-const c = canvas.getContext('2d');
 const number = document.querySelectorAll('.number button');
 const display = document.querySelector('.num h1');
 const operator = document.querySelector('.operator h4')
