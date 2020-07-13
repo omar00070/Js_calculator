@@ -38,6 +38,7 @@ function addAction(e){
     if(actionBtn !== '.' && actionBtn!=='CE' && actionBtn !=='AC' && actionBtn != 'NEG'){
         Dot = false
         operator.innerText = actionBtn;     
+        
         if(displayNum == '0'){
             if(zeroClick){
                 nums.push(Number(displayNum));
@@ -50,6 +51,10 @@ function addAction(e){
                 nums[nums.length - 1] = actionBtn;
             }else{
                 nums.push(actionBtn);
+            }
+            //2nd element in the list should always be an operator else, we remove the first element(ans)
+            if(typeof nums[1] == 'number'){
+                nums.shift();
             }
         }
         zeroClick = false
