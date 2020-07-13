@@ -139,3 +139,38 @@ canvas{
     position: absolute;
     z-index: -1;
 }
+
+.on button{
+    background: rgb(10, 110, 10);
+}
+
+.on button:hover{
+    background: rgb(6, 70, 6);
+}
+
+.on button:active{
+    background: white;
+    color: rgb(10, 110, 10);
+}
+
+.off button{
+    background: rgb(145, 3, 3);
+
+}
+
+.off button:hover{
+    background: rgb(104, 1, 1);
+}
+
+.off button:active{
+    background: white;
+    color: rgb(145, 3, 3);
+}
+
+.canvas-on{
+    display: flex;
+}
+
+.canvas-off{
+    display: none;
+}

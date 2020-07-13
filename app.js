@@ -4,6 +4,8 @@ const display = document.querySelector('.num h1');
 const operator = document.querySelector('.operator h4')
 const action = document.querySelectorAll('.action button');
 const answer = document.querySelector('.answer h3');
+const canvasBtn = document.querySelector('.canvas button');
+
 let displayNum = display.innerText;
 let Dot = false;
 let zeroClick = false;
@@ -18,6 +20,22 @@ for(let i = 0; i < number.length; i++){
 for(let i = 0; i < action.length; i++){
     action[i].addEventListener('click', addAction);
 };
+
+canvasBtn.addEventListener('click', function(){
+    let classes = canvasBtn.parentElement.classList
+    if(classes.value.includes('on')){
+        canvasBtn.innerHTML = "<h2>OFF</h2>";
+        canvas.classList.toggle('canvas-on');
+        canvas.classList.toggle('canvas-off');
+    }else{
+        canvasBtn.innerHTML = "<h2>ON</h2>";
+        canvas.classList.toggle('canvas-on');
+        canvas.classList.toggle('canvas-off');
+    }
+    canvasBtn.parentElement.classList.toggle('off');
+    canvasBtn.parentElement.classList.toggle('on');
+})
+
 
 //functions
 function addNumber(event){
