@@ -134,3 +134,8 @@ h2{
     height: 88px;
     align-items: center;
 }
+
+canvas{
+    position: absolute;
+    z-index: -1;
+}
